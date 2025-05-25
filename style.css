@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(10, 7, 7);
+  background-color: white;
 }
 
 .navbar {
@@ -164,10 +164,11 @@ body {
 }
 
 .info-img img {
-  width: 200px;
-  height: auto;
+  width: 550px;
+  height: 350px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 2px;
+  padding-left: 80px;
 }
 
 .info-content {
@@ -180,6 +181,7 @@ body {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 10px;
+
 }
 
 .info-content .subtext {
@@ -193,6 +195,7 @@ body {
   color: #777;
   margin-bottom: 25px;
   line-height: 1.6;
+  max-width: fit-content;
 }
 
 .button.yellow {
@@ -222,3 +225,20 @@ body {
 
   .info-img img {
     border-radius: 0;}
+    .pet-heading{
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .adopt-link{
+      display: block;
+     background-color: #fdbb2d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+    }
