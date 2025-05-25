@@ -51,7 +51,7 @@ body {
 }
 
 .hero {
-  background: url("") no-repeat center center/cover;
+  background: url("https://cdn.pixabay.com/photo/2018/03/26/02/05/cat-3261420_640.jpg") no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
