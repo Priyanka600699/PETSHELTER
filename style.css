@@ -59,7 +59,6 @@ body {
   padding-left: 50px;
   color: white;
   position: relative;
- /* Space for fixed navbar *
 }
 
 .hero::before {
@@ -80,6 +79,8 @@ body {
 .hero-text h1 {
   margin-bottom: 10px;
   font-size: 2.5em;
+  color: white;
+
 }
 
 .hero-text p {
@@ -104,7 +105,7 @@ body {
   padding: 0px;
   background: #180f0f;
   position: absolute;
-  top: 700px;
+  top: 555px;
   left: 55%;
   transform: translate(-50%);
   
@@ -143,6 +144,81 @@ body {
   .nav-link {
     flex-direction: column;
     gap: 10px;
-    margin-top: 10px;
-  }
+    margin-top: 10px;}}
+
+
+
+/* Info Section */
+.info-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #fff;
 }
+
+.info-img {
+  flex: 1;
+  min-width: 300px;
+}
+
+.info-img img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.info-content {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+}
+
+.info-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.info-content .subtext {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.info-content .description {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.button.yellow {
+  background-color: #fdbb2d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.button.yellow:hover {
+  background-color: #e0a821;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-section, .info-section.reverse {
+    flex-direction: column;
+  }
+
+  .info-content {
+    text-align: center;
+  }
+
+  .info-img img {
+    border-radius: 0;}
