@@ -11,46 +11,60 @@ body {
   background-color: white;
 }
 /* Styling for the navigation bar */
-.navbar {
-  background-color: #2a2828;
-  padding: 15px 0;
-  position: fixed;
-  top: 200;
-  width: 100%;
-  height: 9.8%;
+header {
+  background: #222;
+  padding: 20px 0;
+  position: relative;
   z-index: 1000;
 }
-/* Container inside navbar for layout */
-.nav-container {
+
+.container {
+  width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* Website logo text style */
+
 .logo {
-  color: white;
-  font-size: 28px;
+  color: #fff;
+  font-size: 24px;
   font-weight: bold;
 }
-/* Navigation links container */
-.nav-link {
+
+.navbar ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 20px;
+  align-items: center;
 }
-/* Style for individual navigation links */
-.nav-link li a {
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  color: #fff;
   text-decoration: none;
-  color: beige;
-  font-weight: 700;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
 }
-/* Hover effect on navbar links */
-.nav-link li a:hover {
-  color: red;
+
+.navbar a:hover {
+  color: #d51010;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
 /* Hero section (full-screen background with text) */
 .hero {
   background: url("https://cdn.pixabay.com/photo/2018/03/26/02/05/cat-3261420_640.jpg") no-repeat center center/cover;
@@ -98,97 +112,58 @@ body {
   font-weight: bold;
   border-radius: 5px;
 }
-/*
-.pet-gallery {
-  display: flex;
-  justify-content: center;
-  gap:0px;
-  z-index: 2;
-  padding: 0px;
-  background: #180f0f;
-  position: absolute;
-  top: 555px;
-  left: 55%;
-  transform: translate(-50%);
-  
-}
-
-.pet-gallery img { 
-  width: 250px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 2px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3) ;
-}
-
-.pet-gallery img:hover {
-  transform: scale(1.05);
-}
-
-
-@media (max-width: 768px) {
-  .pet-gallery img {
-    width: 48%;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 700px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .pet-gallery img {
-    width: 100%;
-  }
-*/
 /* Responsive navigation and gallery adjustments for small devices */
-@media (max-width: 700px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
   .nav-link {
     flex-direction: column;
     gap: 10px;
-    margin-top: 10px;}}
+    margin-top: 10px;}
 
 
-
+    .info-section{
+      width:100%;
+      display: flex;
+    }
 /* Info Section */
-.info-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 0;
-  background-color: #fff;
-}
+
 /* Info section image container */
 .info-img {
-  flex: 1;
-  min-width: 300px;
+  width: 40%;
+  /* min-width: 300px; */
 }
 /* Styling the info image */
 .info-img img {
-  width: 550px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 2px;
-  padding-left: 80px;
+  /* padding-left: 80px; */
 }
 /* Text content inside info section */
 .info-content {
-  flex: 1;
-  min-width: 300px;
-  padding: 30px;
+  width: 50%;
+   padding: 50px; 
+}
+@media screen and (min-width:0px)and (max-width:800px){
+  .info-section{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .info-content{
+    width: 100%;
+  
+  }
+  .info-img{
+    width:100%;
+
+  }
 }
 /* Heading in the info content */
 .info-content h2 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 10px;
 
 }
 /* Subtext under heading */
@@ -222,48 +197,63 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .info-section, .info-section.reverse {
-    flex-direction: column;
-  }
+
 
   .info-content {
     text-align: center;
   }
-.pet{
-  display: flex;
-  justify-content: space-between;
-}
   .info-img img {
     border-radius: 0;}
-    .pet-heading{
-      font-size: 24px;
-      color: #333;
-      text-align: center;
-      margin-top: 30px;
-    }
-    .adopt-link{
-      text-align: center;
-     background-color: #fdbb2d;
+
+    .pet {
+  display: flex;
+  justify-content: space-between; /* left and right me space dega */
+  align-items: center; /* vertical align karega */
+  padding: 25px 45px; /* upar-niche and left-right space */
+  margin: 30px 0; /* pet section ke upar-niche ka space */
+  background-color: #f9f9f9; /* optional background */
+  border-radius: 8px; /* thoda corner rounding */
+}
+
+.pet-heading {
+  font-size: 24px;
+  color: #333;
+  margin: 0; /* default margin hata do */
+}
+
+.adopt-link {
+  background-color: #fdbb2d;
   color: white;
   border: none;
-  padding: 12px 24px;
   text-decoration: none;
   border-radius: 4px;
-  font-weight: 600;
+  font-weight: bold;
+  padding: 15px 25px; /* button ke andar ka space */
   transition: background-color 0.3s ease;
-    }
+}
+
+.adopt-link:hover {
+  background-color: #e0a821;
+}
+.video{
+  width: 100%;
+  height: 100%;
+  padding: 20px 80px;
+}
+
+    
       /* Video container styling */
     .video-container{
       max-width: 800px;
       margin: 40px auto;
       text-align: center;
+      padding: 20px 30px;
 
     }
       /* Embedded video frame */
     iframe{
-      width: 100%;
-      height: 450px;
+      width: 700px;
+      height: 400px;
       border-radius: 10px;
       display: block;
       justify-content: center;
@@ -271,18 +261,33 @@ body {
     }
       /* Text below video */
     .video-text{
+      text-align: center;
       margin-top: 15px;
       padding: 0 20px;
       font-size: 18px;
       line-height: 1.6;
       color: #444;
     }
+    .process-section{
+      width: 100%;
+      /* height: 100%; */
+      padding:50px 50px;
+    }
+   
    /* now the adoption process   */
 .process-section h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
   padding-top: 25px;
+}
+.testimonial-section{
+  padding-top: 40px;
+}
+.testimonial-section h1{
+  text-align: center;
+  font-weight: bold;
+
 }
 /* this is the subtitle  */
 .subtitle {

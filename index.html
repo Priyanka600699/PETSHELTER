@@ -3,27 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Full Screen Background</title>
+  <title>PETSHELTER WEBSITE</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="nav-container">
+
+  <header>
+    <div class="container">
       <div class="logo">PETSHELTER</div>
-      <ul class="nav-link">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
           <li><a href="#">Cats</a></li>
-        <li><a href="#">Dogs</a></li>
-        <li><a href="#">Volunteer</a></li>
-        <li><a href="#">Blog ▾</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Dropdown ▾</a></li>
-        
-      </ul>
+          <li><a href="#">Dogs</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </header>
+
+
  <!-- Hero Section with Background and Call to Action -->
   <header class="hero">
     <div class="hero-text">
@@ -32,20 +36,14 @@
       <a href="#" class="btn">FIND A PET TO ADOPT</a>
     </div>
   </header>
-
-<!-- <section class="pet-gallery">
-    <img src="https://cdn.pixabay.com/photo/2023/08/18/01/32/cat-8197577_640.jpg" alt="cat">
-    <img src="https://cdn.pixabay.com/photo/2018/03/18/18/06/australian-shepherd-3237735_640.jpg" alt="dog">
-    <img src="https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_640.jpg" alt="kitten">
-    <img src="https://cdn.pixabay.com/photo/2017/09/02/08/53/golden-retriever-puppy-2706672_640.jpg" alt="puppy">
-  </section>-->
    <!-- Pet Selection Prompt -->
-  <div class="pet">
-    <h3 class="pet-heading">PLEASE SELECT YOUR FAVOURITE PET  </h3>
-    <a href="#" class="adopt-link">FILL ADOPTION FORM</a>
-  </div>
+<div class="pet">
+  <h3 class="pet-heading">PLEASE SELECT YOUR FAVOURITE PET</h3>
+  <a href="#" class="adopt-link">FILL ADOPTION FORM</a>
+</div>
+
    <!-- Info Section with Image and Text Side-by-Side -->
- <section class="info-section reverse">
+ <section class="info-section">
     <div class="info-img">
       <img src= "https://media.istockphoto.com/id/1576433879/photo/young-woman-holding-a-cat.jpg?s=612x612&w=0&k=20&c=EeqsYFv8yiSEPReiMbM_NwrRHhEqBP5K3-ATZeDPwLM="alt="Woman and dog">
     </div>
@@ -60,7 +58,7 @@
     </div>
   </section>
     <!-- Embedded YouTube Video with Description -->
-  <section>
+  <section class="video">
     <div class="video-container">
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/VIDEO_ID?modestbranding=1&rel=0&showinfo=0&controls=1" 
