@@ -1,14 +1,16 @@
+/* Reset default margin and padding, and use border-box model */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Set base font and background for the page */
 body {
   font-family: Arial, sans-serif;
   background-color: white;
 }
-
+/* Styling for the navigation bar */
 .navbar {
   background-color: #2a2828;
   padding: 15px 0;
@@ -18,7 +20,7 @@ body {
   height: 9.8%;
   z-index: 1000;
 }
-
+/* Container inside navbar for layout */
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -27,29 +29,29 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+/* Website logo text style */
 .logo {
   color: white;
   font-size: 28px;
   font-weight: bold;
 }
-
+/* Navigation links container */
 .nav-link {
   list-style: none;
   display: flex;
   gap: 30px;
 }
-
+/* Style for individual navigation links */
 .nav-link li a {
   text-decoration: none;
   color: beige;
   font-weight: 700;
 }
-
+/* Hover effect on navbar links */
 .nav-link li a:hover {
   color: red;
 }
-
+/* Hero section (full-screen background with text) */
 .hero {
   background: url("https://cdn.pixabay.com/photo/2018/03/26/02/05/cat-3261420_640.jpg") no-repeat center center/cover;
   height: 100vh;
@@ -60,7 +62,7 @@ body {
   color: white;
   position: relative;
 }
-
+/* Dark overlay on hero image */
 .hero::before {
   content: "";
   position: absolute;
@@ -70,24 +72,24 @@ body {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
 }
-
+/* Hero text container */
 .hero-text {
   position: relative;
   max-width: 500px;
 }
-
+/* Main heading in hero section */
 .hero-text h1 {
   margin-bottom: 10px;
   font-size: 2.5em;
   color: white;
 
 }
-
+/* Paragraph in hero section */
 .hero-text p {
   margin-bottom: 20px;
   font-size: 1.1em;
 }
-
+/* Button style */
 .btn {
   background-color: #fff;
   color: #333;
@@ -96,7 +98,7 @@ body {
   font-weight: bold;
   border-radius: 5px;
 }
-
+/*
 .pet-gallery {
   display: flex;
   justify-content: center;
@@ -123,7 +125,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .pet-gallery img {
     width: 48%;
@@ -140,7 +142,13 @@ body {
   .pet-gallery img {
     width: 100%;
   }
-
+*/
+/* Responsive navigation and gallery adjustments for small devices */
+@media (max-width: 700px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .nav-link {
     flex-direction: column;
     gap: 10px;
@@ -157,12 +165,12 @@ body {
   padding: 50px 0;
   background-color: #fff;
 }
-
+/* Info section image container */
 .info-img {
   flex: 1;
   min-width: 300px;
 }
-
+/* Styling the info image */
 .info-img img {
   width: 550px;
   height: 350px;
@@ -170,34 +178,34 @@ body {
   border-radius: 2px;
   padding-left: 80px;
 }
-
+/* Text content inside info section */
 .info-content {
   flex: 1;
   min-width: 300px;
   padding: 30px;
 }
-
+/* Heading in the info content */
 .info-content h2 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 10px;
 
 }
-
+/* Subtext under heading */
 .info-content .subtext {
   font-size: 18px;
   margin-bottom: 20px;
   color: #444;
 }
-
+/* Description text */
 .info-content .description {
   font-size: 16px;
   color: #777;
   margin-bottom: 25px;
   line-height: 1.6;
-  max-width: fit-content;
+  max-width:fit-content;
 }
-
+/* Yellow button styling */
 .button.yellow {
   background-color: #fdbb2d;
   color: white;
@@ -208,7 +216,7 @@ body {
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
-
+/* Hover effect on yellow button */
 .button.yellow:hover {
   background-color: #e0a821;
 }
@@ -222,7 +230,10 @@ body {
   .info-content {
     text-align: center;
   }
-
+.pet{
+  display: flex;
+  justify-content: space-between;
+}
   .info-img img {
     border-radius: 0;}
     .pet-heading{
@@ -232,7 +243,7 @@ body {
       margin-top: 30px;
     }
     .adopt-link{
-      display: block;
+      text-align: center;
      background-color: #fdbb2d;
   color: white;
   border: none;
@@ -242,46 +253,52 @@ body {
   font-weight: 600;
   transition: background-color 0.3s ease;
     }
+      /* Video container styling */
     .video-container{
       max-width: 800px;
       margin: 40px auto;
       text-align: center;
 
     }
+      /* Embedded video frame */
     iframe{
       width: 100%;
       height: 450px;
       border-radius: 10px;
+      display: block;
+      justify-content: center;
 
     }
+      /* Text below video */
     .video-text{
-      margin-top: 20px;
+      margin-top: 15px;
       padding: 0 20px;
       font-size: 18px;
       line-height: 1.6;
       color: #444;
     }
-    
-h1 {
+   /* now the adoption process   */
+.process-section h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
+  padding-top: 25px;
 }
-
+/* this is the subtitle  */
 .subtitle {
   text-align: center;
   font-size: 1rem;
   margin-bottom: 40px;
   color: #666;
 }
-
+/* now the process container,testimonial  */
 .process-container, .testimonials {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
 }
-
+/* this is all steps of testimonal  */
 .step, .testimonial {
   background-color: #f4f5ff;
   padding: 30px;
