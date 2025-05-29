@@ -9,6 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: white;
+  height: 100vh;
 }
 nav{
   width: 100%;
@@ -19,6 +20,7 @@ nav{
     justify-content: space-between;
     padding: 0px 50px 0px 100px;
     z-index: 1000;
+    position: fixed;
 }
 .logo{
   font-size: 33px;
@@ -530,4 +532,18 @@ margin-left:200px ;
 
 .socials a:hover {
   color: #fff;
+}
+
+.carousel-container {
+  /* margin-top: -40px;  */
+  padding: 0px 100px 0px 100px;
+  background: rgb(240, 239, 239);
+  z-index: 1;
+  position: relative;
+}
+
+.owl-carousel .item img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 10px; */
 }
